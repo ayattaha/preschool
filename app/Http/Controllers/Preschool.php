@@ -53,4 +53,15 @@ class Preschool extends Controller
         $title="preschool team";
         return view('team',compact('title'));
     }
+    
+    // Dashboard methodes
+    
+    public function dashboard(){
+        $title="preschool admin dashboard";
+        return view('admin.dashboard',compact('title'));
+    }
+    public function form(){
+        $title="preschool admin form";
+        return view('admin.form',compact('title'));
+    }
 }
